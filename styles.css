@@ -1,0 +1,455 @@
+/* General Styles */
+body {
+    margin: 0; /* Menghilangkan margin default di body */
+    padding: 0; /* Menghilangkan padding default di body */
+    font-family: 'Roboto', sans-serif; /* Menetapkan font keluarga utama halaman */
+    background: linear-gradient(135deg, #000, #4b2e2e); /* Menambahkan latar belakang dengan gradien warna hitam ke coklat */
+    color: #fff; /* Mengatur warna teks menjadi putih */
+  }
+  
+  /* Navbar */
+  .navbar-brand .logo {
+    height: 40px; /* Mengatur tinggi logo navbar */
+  }
+  
+  /* Navbar Text */
+  .navbar .navbar-brand span {
+    font-family: 'Roboto', sans-serif; /* Menggunakan font 'Roboto' untuk teks navbar */
+    font-weight: 700; /* Membuat teks navbar lebih tebal */
+  }
+  
+  /* Navbar items */
+  .navbar-nav {
+    display: flex; /* Mengatur item navbar menjadi flexbox */
+    justify-content: center;  /* Menyusun item navbar di tengah */
+    align-items: center; /* Menyusun item navbar secara vertikal di tengah */
+  }
+  
+  .navbar-nav .nav-link {
+    font-weight: 500; /* Membuat teks item navbar lebih tebal */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+    margin-right: 20px; /* Memberikan jarak antar item navbar */
+  }
+  
+  .navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 0;  /* Menghapus margin kanan pada item navbar terakhir */
+  }
+  
+  /* Home Section */
+  #home {
+    position: relative; /* Menempatkan elemen dalam posisi relatif untuk pengaturan overlay */
+    height: 100vh; /* Mengatur tinggi home section sesuai tinggi layar */
+    background: url('haikyuu-anime.gif') no-repeat center center/cover; /* Menambahkan gambar latar belakang dengan efek cover */
+    display: flex; /* Menggunakan flexbox untuk menata elemen di dalamnya */
+    align-items: center; /* Menyusun konten secara vertikal di tengah */
+    justify-content: center; /* Menyusun konten secara horizontal di tengah */
+    color: #fff; /* Mengatur warna teks menjadi putih */
+    text-align: center; /* Menyusun teks agar terpusat */
+  }
+  
+  #home .overlay {
+    position: absolute; /* Posisi overlay di atas gambar latar belakang */
+    top: 0; /* Menempatkan overlay di bagian atas */
+    left: 0; /* Menempatkan overlay di sisi kiri */
+    height: 100%; /* Mengatur tinggi overlay untuk menutupi seluruh section */
+    width: 100%; /* Mengatur lebar overlay untuk menutupi seluruh section */
+    background: rgba(0, 0, 0, 0.6); /* Menambahkan warna gelap transparan pada overlay */
+  }
+  
+  #home .content {
+    z-index: 2; /* Mengatur konten di atas overlay */
+  }
+  
+  /* Fonts and Basic Styling */
+  body {
+    background: linear-gradient(135deg, #000000 30%, #5e3f07 100%); /* Menetapkan gradien latar belakang dengan transisi warna hitam ke coklat */
+    color: #ffffff; /* Menetapkan warna teks menjadi putih */
+    font-family: 'Roboto', sans-serif; /* Menetapkan font utama 'Roboto' untuk seluruh halaman */
+  }
+  
+  h2.section-title {
+    font-family: 'Bebas Neue', sans-serif; /* Menggunakan font 'Bebas Neue' untuk judul seksi */
+    font-size: 2.5rem; /* Mengatur ukuran font untuk judul seksi */
+    color: #ff6600; /* Memberikan warna oranye pada teks judul */
+    border-bottom: 3px solid #ff6600; /* Menambahkan border bawah dengan warna oranye pada judul */
+    padding-bottom: 10px; /* Memberikan jarak bawah pada teks judul */
+    margin-bottom: 30px; /* Memberikan margin bawah untuk memberi ruang antar elemen */
+    text-shadow: 1px 1px 3px #000; /* Menambahkan bayangan pada teks untuk efek kedalaman */
+    letter-spacing: 2px; /* Menambah jarak antar huruf agar teks lebih tegas */
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background: rgba(0, 0, 0, 0.9); /* Mengatur latar belakang navbar dengan transparansi hitam */
+    display: flex; /* Menggunakan flexbox untuk menyusun navbar */
+    justify-content: flex-start; /* Menyusun item navbar ke kiri */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ff6600; /* Mengatur warna teks navbar link menjadi oranye */
+    font-weight: bold; /* Membuat teks navbar menjadi tebal */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffd700; /* Mengubah warna teks navbar link menjadi emas saat hover */
+    text-decoration: bold; /* Menambahkan efek garis bawah pada teks saat hover */
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem; /* Mengatur ukuran font pada judul seksi */
+    font-weight: 700; /* Membuat teks judul seksi tebal */
+    color: #ff6600; /* Memberikan warna oranye pada teks judul seksi */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 2px; /* Menambah jarak antar huruf */
+    margin-bottom: 20px; /* Memberikan margin bawah pada judul */
+  }
+  
+  .section-title:hover {
+    color: #fff; /* Mengubah warna teks menjadi putih saat hover */
+  }
+  
+  /* About Text */
+  .about-text {
+    font-size: 1.2rem; /* Mengatur ukuran font teks about */
+    color: #ffffff; /* Mengatur warna teks menjadi putih */
+    line-height: 1.8; /* Mengatur jarak antar baris */
+    margin-bottom: 30px; /* Memberikan margin bawah pada teks */
+    font-family: 'Roboto', sans-serif; /* Menetapkan font 'Roboto' untuk teks */
+    letter-spacing: 0.5px; /* Menambah jarak antar huruf */
+    transition: color 0.3s ease-in-out; /* Efek transisi warna saat hover */
+  }
+  
+  .about-text:hover {
+    color: #ff6600; /* Mengubah warna teks menjadi oranye saat hover */
+  }
+  
+  /* History Row Layout */
+  .history-row {
+    display: flex; /* Menyusun elemen-elemen di dalamnya dengan flexbox */
+    align-items: center; /* Menyusun elemen secara vertikal di tengah */
+    justify-content: space-between; /* Memberikan ruang antar elemen */
+    margin-bottom: 40px; /* Memberikan margin bawah pada elemen */
+  }
+  
+  .history-row.reverse {
+    flex-direction: row-reverse; /* Membalik arah urutan elemen dalam flexbox */
+  }
+  
+  .history-text {
+    width: 50%; /* Menetapkan lebar teks sejarah menjadi 50% */
+    font-size: 1.1rem; /* Mengatur ukuran font teks sejarah */
+    color: #ffffff; /* Mengatur warna teks menjadi putih */
+    line-height: 1.6; /* Mengatur jarak antar baris */
+    padding: 20px; /* Memberikan padding pada teks */
+    font-family: 'Roboto', sans-serif; /* Menetapkan font 'Roboto' untuk teks */
+    letter-spacing: 0.5px; /* Menambah jarak antar huruf */
+  }
+  
+  .history-text:hover {
+    color: #ff6600; /* Mengubah warna teks menjadi oranye saat hover */
+  }
+  
+  .history-image {
+    width: 40%; /* Menetapkan lebar gambar sejarah menjadi 40% */
+  }
+  
+  .history-image img {
+    max-width: 100%; /* Membuat gambar mengisi wadah secara maksimal */
+    border-radius: 10px; /* Memberikan efek sudut melengkung pada gambar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada gambar */
+  }
+  
+  /* Hover Effects for History Images */
+  .history-image img:hover {
+    transform: scale(1.05); /* Memperbesar gambar saat hover */
+    transition: transform 0.3s ease-in-out; /* Menambahkan efek transisi saat memperbesar gambar */
+  }
+  
+  
+  /*shop*\
+  /* General product section styling */
+  #products, #shoes, #jerseys {
+    margin-top: 50px;
+  }
+  
+  .product-img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for product images */
+  .product-img:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  
+  /* Styling for the product names and descriptions */
+  .product-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;  /* Dark text for product name */
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #666;  /* Lighter gray for product description */
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  /* Price styling */
+  .product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;  /* Red color for price */
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Adjustments for each column */
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
+  
+  /* Make product section grid responsive */
+  @media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+  }
+  
+  /* Section title styling */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #333;  /* Dark text for section title */
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for product links */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Optional: Styling for the carousel images */
+  .carousel-inner img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-inner img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Section title styling */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for product links */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Optional: Styling for the carousel images */
+  .carousel-inner img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-inner img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Carousel styling */
+  .carousel-inner img {
+    height: 350px; /* Mengatur tinggi gambar carousel */
+    border-radius: 10px; /* Memberikan efek sudut melengkung pada gambar */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa merubah proporsi */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan untuk memberi efek kedalaman */
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(255, 165, 0, 0.7); /* Menambahkan latar belakang oranye transparan pada kontrol carousel */
+    border-radius: 50%; /* Membuat bentuk kontrol menjadi bulat */
+    width: 30px; /* Menetapkan lebar ikon kontrol */
+    height: 30px; /* Menetapkan tinggi ikon kontrol */
+  }
+  
+  /* Arrow hover effect */
+  .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    box-shadow: 0 0 15px rgba(255, 165, 0, 1); /* Menambahkan efek cahaya oranye saat ikon kontrol dihover */
+  }
+  
+  /* Product images hover effect */
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: s;
+  }
+  
+  .product-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan efek transisi saat gambar diperbesar atau ada bayangan */
+    cursor: pointer; /* Mengubah kursor menjadi pointer untuk menunjukkan bahwa elemen bisa diklik */
+  }
+  
+  .product-img:hover {
+    transform: scale(1.1);  /* Memperbesar gambar saat hover */
+    box-shadow: 0 0 15px rgba(255, 165, 0, 1);  /* Menambahkan efek cahaya oranye saat hover */
+  }
+  
+  /* Increased spacing between sections */
+  .container.my-5 {
+    padding-top: 60px; /* Menambahkan padding atas */
+    padding-bottom: 60px; /* Menambahkan padding bawah */
+  }
+  
+  /* Button styling */
+  button, .navbar-toggler {
+    font-family: 'Bebas Neue', sans-serif; /* Menggunakan font 'Bebas Neue' yang sama dengan judul untuk tombol */
+    font-weight: bold; /* Membuat teks tombol menjadi tebal */
+    color: #ffffff; /* Menetapkan warna teks tombol menjadi putih */
+    background-color: #ff6600; /* Memberikan latar belakang oranye cerah pada tombol */
+    border-radius: 5px; /* Membuat sudut tombol membulat */
+    border: none; /* Menghilangkan border tombol */
+    transition: background-color 0.3s ease; /* Menambahkan efek transisi saat hover */
+  }
+  
+  button:hover, .navbar-toggler:hover {
+    background-color: #ff8c1a; /* Mengubah warna latar belakang tombol menjadi oranye lebih gelap saat hover */
+  }
+  
+  /* Custom styling for product lists */
+  .product-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi serupa dengan sebelumnya */
+    cursor: pointer; /* Menunjukkan gambar dapat diklik */
+  }
+  
+    .product-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(230, 123, 35, 0.795); /* Pink neon hover effect */
+    }
+    
+  
+  
+  /* Section Titles */
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #ff6600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Contact Section Styling */
+  #contact {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  #contact .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 20px;
+  }
+  
+  #contact .lead {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+  }
+  
+  #contact form .form-label {
+    font-weight: 500;
+  }
+  
+  #contact .form-control {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  #contact .form-control:focus {
+    border-color: #ff6600;
+    background-color: #222;
+  }
+  
+  #contact .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  #contact .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  #contact .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  
+  /* Hover effect on the chat link */
+  #contact a {
+    color: #ff6600;
+    text-decoration: underline;
+  }
+  
+  #contact a:hover {
+    color: #ff9900;
+  }
+  
+  
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #222; /* Dark background for footer */
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif; /* Consistent font throughout */
+    border-top: 2px solid #ff6600; /* Subtle orange border on top */
+  }
+  
+  /* Unified Footer Text Styling (for Contact Us! and Copyright) */
+  .footer-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff6600; /* Bright orange color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Add text shadow for emphasis */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  .footer-text:hover {
+    color: #fff; /* Change color on hover */
+  }
+  
+  /* Social Media Icons */
+  .social-icons a {
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transform effect */
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+    opacity: 0.8; /* Slight opacity change for hover effect */
+  }
